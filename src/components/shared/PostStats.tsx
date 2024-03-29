@@ -29,7 +29,7 @@ const PostStats = ({ post, userId }: Postpropstype) => {
 
   const likesList = post.likes.map((user: Models.Document) => user.$id);
 
-  console.log(likesList);
+  // console.log(likesList);
 
   //likesList is an new array which is created by map
   const [likes, setLikes] = useState<string[]>(likesList);
