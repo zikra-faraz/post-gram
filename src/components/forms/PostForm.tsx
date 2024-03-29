@@ -38,7 +38,7 @@ const PostForm = ({ post, action }: postFormPropsType) => {
     register,
 
     control,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm<postSchema>({
     resolver: zodResolver(PostValidation),
     defaultValues: {

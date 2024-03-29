@@ -27,12 +27,11 @@ const SignupForm = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
 
-  const { checkAuthUser, isLoading: isUserLoading } = useAuthContext();
+  const { checkAuthUser } = useAuthContext();
   const { isPending: isCreatingUser, mutateAsync: createUserAccount } =
     useCreateUserAccount();
 
-  const { isPending: isSigningIn, mutateAsync: signInAccount } =
-    useSignInAccount();
+  const { mutateAsync: signInAccount } = useSignInAccount();
   // 1. Define your form.
 
   type formFields = z.infer<typeof SignupValidation>;

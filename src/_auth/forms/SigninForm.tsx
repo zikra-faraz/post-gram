@@ -25,11 +25,7 @@ const SigninForm = () => {
 
   const { mutateAsync: signInAccount, isPending } = useSignInAccount();
 
-  const {
-    checkAuthUser,
-    isLoading: isUserLoading,
-    isAuthenticated,
-  } = useAuthContext();
+  const { checkAuthUser } = useAuthContext();
   const form = useForm<formFields>({
     resolver: zodResolver(SigninValidation),
     defaultValues: {
@@ -44,7 +40,7 @@ const SigninForm = () => {
         email: user.email,
         password: user.password,
       });
-      console.log(session);
+      // console.log(session);
 
       if (!session) {
         toast({
@@ -55,8 +51,8 @@ const SigninForm = () => {
 
       const isLoggedIn = await checkAuthUser();
 
-      console.log(isLoggedIn);
-      console.log(isAuthenticated);
+      // console.log(isLoggedIn);
+      // console.log(isAuthenticated);
 
       if (isLoggedIn) {
         form.reset();

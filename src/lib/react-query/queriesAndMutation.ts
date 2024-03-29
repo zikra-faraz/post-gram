@@ -1,12 +1,7 @@
 import authService from "@/appwrite/authService";
 import dbService from "@/appwrite/dbService";
 import { INewUser, INewPost, IUpdatePost } from "@/types";
-import {
-  useQuery,
-  useMutation,
-  useInfiniteQuery,
-  useQueryClient,
-} from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { QUERY_KEYS } from "./queryKey";
 //useQuery is to fetchind the data
 //useMutaation for modifying the data

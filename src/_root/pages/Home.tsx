@@ -1,12 +1,12 @@
-import dbService from "@/appwrite/dbService";
+// import dbService from "@/appwrite/dbService";
 import { Models } from "appwrite";
 import Loader from "@/components/shared/Loader";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import PostCard from "@/components/shared/PostCard";
 import { useGetRecentPost } from "@/lib/react-query/queriesAndMutation";
-type PostType = {
-  documents: Models.Document[];
-};
+// type PostType = {
+//   documents: Models.Document[];
+// };
 // documents: Models.Document[]: Inside PostType, we have a property called documents. This property is expected to hold an array of objects of type Models.Document.
 const Home = () => {
   const { data: posts, isLoading: loading } = useGetRecentPost();

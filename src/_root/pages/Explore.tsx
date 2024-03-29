@@ -1,7 +1,7 @@
 import SearchResults from "@/components/shared/SearchResults";
 import { Input } from "@/components/ui/input";
 import { useSearchPost } from "@/lib/react-query/queriesAndMutation";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Explore = () => {
   const [searchValue, setSearchValue] = useState("");
