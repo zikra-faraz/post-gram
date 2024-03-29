@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { multiFormatDateString } from "@/lib/utils";
 import { useAuthContext } from "@/context/AuthContext";
 import PostStats from "./PostStats";
-import Postlikeandsave from "./Postlikeandsave";
+// import Postlikeandsave from "./Postlikeandsave";
 
 type PostCardProps = {
   post: Models.Document;
