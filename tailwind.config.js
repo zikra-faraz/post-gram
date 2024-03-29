@@ -17,6 +17,7 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+
     extend: {
       colors: {
         "primary-500": "#877EFF",
